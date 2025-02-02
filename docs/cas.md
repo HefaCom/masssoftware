@@ -3,7 +3,7 @@
 A robust Windows Powershell script to display the licensing status of Microsoft Windows and Office.
 
 **Author:** [HefaCom](https://github.com/HefaCom)  
-<!-- **Github Repo:** https://github.com/gravesoft/CAS   -->
+**Github Repo:** https://github.com/gravesoft/CAS  
 
 ---
 

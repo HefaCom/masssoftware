@@ -8,12 +8,12 @@ Hezron:
     github: HefaCom
     x: _hezron__
 
-# may:
-#   name: May
-#   title: Researcher @ MASSGRAVE
-#   url: https://github.com/ave9858
-#   image_url: https://avatars.githubusercontent.com/u/112294121
-#   page: true
-#   socials:
-#     github: ave9858
+may:
+  name: May
+  title: Researcher @ MASSGRAVE
+  url: https://github.com/ave9858
+  image_url: https://avatars.githubusercontent.com/u/112294121
+  page: true
+  socials:
+    github: ave9858
 
