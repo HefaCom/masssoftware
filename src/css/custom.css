@@ -1,0 +1,119 @@
+:root {
+  --ifm-color-primary: #ff5733;
+  --ifm-color-primary-dark: #c70039;
+  --ifm-color-primary-darker: #900c3f;
+  --ifm-color-primary-darkest: #581845;
+  --ifm-color-primary-light: #ff8d6b;
+  --ifm-color-primary-lighter: #ffb3a0;
+  --ifm-color-primary-lightest: #ffcccc;
+  --ifm-table-cell-padding: 0.5rem;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ff8d6b;
+  --ifm-color-primary-dark: #ff5733;
+  --ifm-color-primary-darker: #c70039;
+  --ifm-color-primary-darkest: #900c3f;
+  --ifm-color-primary-light: #ffb3a0;
+  --ifm-color-primary-lighter: #ffcccc;
+  --ifm-color-primary-lightest: #f2d6d6;
+}
+
+.navbar,
+.navbar-sidebar__brand {
+  background-color: #2c3e50;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+  box-shadow: 0 0 10px #0006;
+}
+
+.navbar__logo img {
+  filter: drop-shadow(1px 1px 2px #0003);
+}
+
+.navbar__inner,
+.navbar__inner a,
+.navbar__inner a:hover,
+.navbar-sidebar__brand,
+.navbar-sidebar__brand a,
+.navbar-sidebar__brand a:hover {
+  color: #fff;
+}
+
+.navbar__inner .navbar__item {
+  transition: background var(--ifm-transition-fast);
+  border-radius: var(--ifm-global-radius);
+  margin: 0 .1rem;
+  padding: var(--ifm-navbar-item-padding-vertical) calc(var(--ifm-navbar-item-padding-horizontal) - .1rem);
+}
+
+.navbar__inner .navbar__item:hover,
+.navbar__inner .clean-btn:hover,
+.navbar-sidebar__brand .clean-btn:hover,
+.navbar__inner .dropdown__link:hover {
+  background-color: #fff3;
+}
+
+.navbar__inner .navbar__item.navbar__link--active,
+.navbar__inner .dropdown__link.dropdown__link--active {
+  background-color: #fff2;
+}
+
+.navbar-sidebar__close {
+  --ifm-color-emphasis-600: #fff;
+}
+
+.navbar__toggle.clean-btn:hover,
+.navbar-sidebar__close.clean-btn:hover {
+  background: none;
+}
+
+.navbar__inner .dropdown__menu {
+  background: #0c040ecc;
+  border: 1px solid #fff3;
+  backdrop-filter: blur(1rem);
+}
+
+.navbar__inner .github-button,
+.navbar__inner .discord-button {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  margin: 0;
+  border-radius: var(--ifm-breadcrumb-border-radius);
+  padding: var(--ifm-navbar-item-padding-vertical) var(--ifm-navbar-item-padding-horizontal);
+}
+
+.navbar__inner .github-button *,
+.navbar__inner .discord-button * {
+  display: none;
+}
+
+.navbar__inner .github-button:before,
+.navbar__inner .discord-button:before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.navbar__inner .discord-button:before {
+  background: url('/img/logo_x.png') no-repeat;
+  margin: 3px 0 0 -7px;
+  width: 30px;
+  height: 30px;
+}
+
+.navbar__inner .github-button:before {
+  background: url('/img/github.svg') no-repeat;
+  margin: 1px 0 0 -7px;
+}
+
+table {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2.2rem;
+}
